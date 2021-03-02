@@ -16,9 +16,9 @@ class PostModel extends Model
         return $this->belongsTo('App\Models\User');
     }
 
-    public function userroles(){
-        return $this->belongsToMany('App\Models\Role', 'role_user', 'user_id', 'role_id');
-    }
+    // public function userroles(){
+    //     return $this->belongsToMany('App\Models\Role', 'role_user', 'user_id', 'role_id');
+    // }
 
     public function photos()
     {
